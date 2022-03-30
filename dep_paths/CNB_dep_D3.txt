@@ -1,0 +1,6 @@
+P10 n D3
+P1 n D3
+P2 m q r D3
+P3 m q r D3
+P4 l q r D3
+P5 l q r D3

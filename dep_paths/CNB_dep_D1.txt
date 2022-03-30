@@ -1,0 +1,6 @@
+P9 a D1
+P8 e b D1
+P7 D1
+P6 f c D1
+P5 g d D1
+P4 g d D1

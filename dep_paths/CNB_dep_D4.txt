@@ -1,0 +1,4 @@
+P1 D4
+P2 i s D4
+P2 i h s D4
+P3 h s D4

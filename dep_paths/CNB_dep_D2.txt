@@ -1,0 +1,8 @@
+P5 l q r D2
+P4 l q r D2
+P3 m q r D2
+P2 m q r D2
+P6 k o p D2
+P7 k o p D2
+P8 j o p D2
+P9 p D2
