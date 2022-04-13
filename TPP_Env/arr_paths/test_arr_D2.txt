@@ -1,0 +1,4 @@
+D2 c P1
+D2 c P2
+D2 d P2
+D2 d P3

@@ -1,0 +1,5 @@
+P1 a D1
+P2 a D1
+P2 e D1
+P2 b D1
+P3 b D1
