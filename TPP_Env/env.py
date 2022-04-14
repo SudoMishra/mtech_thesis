@@ -3,6 +3,7 @@ from datetime import datetime, time, timedelta
 import matplotlib.pyplot as plt
 import heapq
 import random
+import dill
 
 colors = {"arr": "green", "pf": "gray", "mid": "blue", "dep": "red"}
 time_format = "%H:%M:%S"
@@ -291,6 +292,16 @@ def read_dep_paths():
     return dep_paths
 
 
+def save_agent(agent, fname):
+    dill.dump(agent, file=open(f'./saved_agents/{fname}.pickle', 'wb'))
+
+
+def load_agent(fname):
+    with open(f"./saved_agents/{fname}.pickle", "rb") as file:
+        agent = dill.load(file)
+    return agent
+
+
 class Train:
     def __init__(self, data):
         '''
@@ -306,6 +317,7 @@ class Train:
         self.data = dict()
         for key, value in data.items():
             self.data[key] = value
+        self.reward = 0
         # self.in_dir = one_hot([self.data["in_dir"]],  n_dir)
         # self.out_dir = one_hot(self.data["out_dir"], n_dir)
         # self.pfs = one_hot(self.data["pref_pf"], n_pfs)
@@ -385,6 +397,75 @@ class Agent:
         pass
 
 
+class Agent_MCTS:
+    def __init__(self, t_list, in_state, out_state):
+        self.n_train = 0  # no. of episodes trained
+        self.q_table = dict()
+        for t in t_list:
+            self.q_table[t.data["name"]] = {
+                "in_path_val": [0 for i in range(len(in_state))],
+                "out_path_val": [0 for i in range(len(out_state))],
+                "in_path_count": [0 for i in range(len(in_state))],
+                "out_path_count": [0 for i in range(len(out_state))]}
+
+    def act(self, train, data, tq):
+        '''
+        Get an action from an Agent
+        action : (train,in_path,out_path,pf,delay)
+        '''
+        in_dir = train.data["in_dir"]
+        out_dir = train.data["out_dir"]
+        # get in_paths
+        possible_in_paths = []
+        for path_id in in_paths_from[in_dir]:
+            if not data[0][path_id]:  # if  in_path_id is not locked
+                possible_in_paths.append(path_id)
+        if not len(possible_in_paths):  # if there are no possible in_paths no choice but delay
+            return (train, -1, -1, -1, 1)
+        # choose the in_path
+        in_path = self.choose_in_path(possible_in_paths)
+        # get platform from chosen in_path
+        pf = arr_paths[in_path][-1]
+        possible_out_paths = []
+        for path_id in out_paths_from[pf][out_dir]:
+            if not data[1][path_id]:  # if out_path_id is not locked
+                possible_out_paths.append(path_id)
+        if not len(possible_out_paths):
+            return (train, -1, -1, -1, 1)
+        out_path = self.choose_out_path(possible_out_paths)
+        return (train, in_path, out_path, pf, 0)
+
+    def choose_in_path(self, in_paths):
+        '''
+        returns the id of the chosen in_path
+        '''
+        return random.choice(in_paths)
+
+    def choose_out_path(self, out_paths):
+        '''
+        returns the id of the chosen in_path
+        '''
+        return random.choice(out_paths)
+
+    def get_reward(self, reward):
+        pass
+
+    def update_q_table(self, rewards):
+        '''
+        rewards : list of (train_id, in_path_id, out_path_id, net returns)
+        '''
+        v1, v2, v3, v4 = 0, 0, 0, 0
+        for r in rewards:
+            self.q_table[r[0]]["in_path_count"][r[1]] += 1
+            self.q_table[r[0]]["out_path_count"][r[2]] += 1
+            v1 = self.q_table[r[0]]["in_path_val"][r[1]]
+            v2 = self.q_table[r[0]]["out_path_val"][r[2]]
+            v3 = self.q_table[r[0]]["in_path_count"][r[1]]
+            v4 = self.q_table[r[0]]["out_path_count"][r[2]]
+            self.q_table[r[0]]["in_path_val"][r[1]] = v1 + (r[3]-v1)/v3
+            self.q_table[r[0]]["out_path_val"][r[1]] = v2 + (r[3]-v2)/v4
+
+
 class Env:
     '''
     init_conds  : A dictionary with keys
@@ -395,19 +476,26 @@ class Env:
                     "pf_state"   : initial state of platforms
     '''
 
-    def __init__(self, init_conds, agent):
+    def __init__(self, init_conds):
         self.station, self.directs, self.platforms, self.mid_nodes, self.arr_paths, self.dep_paths = create_station()
         self.in_state = [0 for i in range(len(self.arr_paths))]
+        # stores the time when in_path will be unlocked it is 0 if already unlocked
+        self.in_state_t = [0 for i in range(len(self.arr_paths))]
         self.out_state = [0 for i in range(len(self.dep_paths))]
+        # stores the time when out_path will be unlocked it is 0 if already unlocked
+        self.out_state_t = [0 for i in range(len(self.dep_paths))]
         self.pf_state = [0 for i in range(n_pfs)]
-        self.locked = []
-        self.all_recs = []
+        # stores the time when pf will be unlocked it is 0 if already unlocked
+        self.pf_state_t = [0 for i in range(n_pfs)]
         self.tq = PriorityQueue()
         self.mq = PriorityQueue()
         self.clock = init_conds["start_time"]
         self.schedule = []
-        self.agent = agent
+        self.agent = None
         self.ep_limit = 100
+        self.net_delay = 0
+        # self.t_list = dict() # (t_name,idx_when_scheduled,reward)
+        self.ep_returns = []
         self.set_ids()
         get_in_paths_from(self.arr_paths)
         get_out_paths_from(self.dep_paths)
@@ -415,8 +503,7 @@ class Env:
         create_PIG_nodes()
         create_PIG_edges()
         self.init_states(init_conds)
-        self.init_pq(init_conds["tlist"])
-        self.init_recs()
+        self.init_pq(init_conds["tlist"], init_conds["mlist"])
 
     def set_ids(self):
         for idx, arr in enumerate(self.arr_paths):
@@ -424,17 +511,14 @@ class Env:
         for idx, arr in enumerate(self.dep_paths):
             dep_paths[idx] = arr
 
-    def init_recs(self):
-        for d in self.directs:
-            self.all_recs.append(d)
-        for p in self.platforms:
-            self.all_recs.append(p)
-        for m in self.mid_nodes:
-            self.all_recs.append(m)
+    def init_agent(self, agent):
+        self.agent = agent
 
-    def init_pq(self, tlist):
+    def init_pq(self, tlist, mlist):
         for t in tlist:
             self.tq.push(t)
+        for m in mlist:
+            self.mq.push(m)
 
     def init_states(self, init_conds):
         if len(init_conds["in_state"]):
@@ -443,13 +527,19 @@ class Env:
             self.out_state = init_conds["out_state"]
         if len(init_conds["pf_state"]):
             self.pf_state = init_conds["pf_state"]
+        self.in_state_t = [0 for i in range(len(self.arr_paths))]
+        self.out_state_t = [0 for i in range(len(self.dep_paths))]
+        self.pf_state_t = [0 for i in range(n_pfs)]
 
     def reset(self, init_conds):
+        self.tq = PriorityQueue()
+        self.mq = PriorityQueue()
         self.init_states(init_conds)
-        self.init_pq(init_conds["tlist"])
-        # self.in_state = [0 for i in range(len(self.in_paths))]
-        # self.out_state = [0 for i in range(len(self.out_paths))]
-        # self.pf_state = [0 for i in range(self.npfs)
+        self.init_pq(init_conds["tlist"], init_conds["mlist"])
+        self.clock = init_conds["start_time"]
+        self.net_delay = 0
+        self.schedule = []
+        self.ep_returns = []
 
     def lock(self, res):
         '''
@@ -459,10 +549,13 @@ class Env:
         curr = self.clock
         in_path, out_path, pf, stop = res[0], res[1], res[2], res[3]
         pf = pf_id[pf]
-        self.in_state[in_path] = 1
-        self.out_state[out_path] = 1
+        self.in_state[in_path] += 1
+        self.in_state_t[in_path] = curr + stop
+        self.out_state[out_path] += 1
+        self.out_state_t[out_path] = curr + stop
         # if pf != -1:
-        self.pf_state[pf] = 1
+        self.pf_state[pf] += 1
+        self.pf_state_t[pf] = curr + stop
         # print(f"Locked nbr in_path {in_path} out_path {out_path}")
         print(f"Locked in_path {in_path} out_path {out_path} pf {pf}")
         curr = (curr + stop) % tmax
@@ -480,9 +573,11 @@ class Env:
         in_path, out_path, stop = res[0], res[1], res[3]
         # pf = pf_id[pf]
         if in_path != -1:
-            self.in_state[in_path] = 1
+            self.in_state[in_path] += 1
+            self.in_state_t[in_path] = curr + stop
         if out_path != -1:
-            self.out_state[out_path] = 1
+            self.out_state[out_path] += 1
+            self.out_state_t[out_path] = curr + stop
         # if pf != -1:
         # self.pf_state[pf] = 1
         print(f"Locked nbr in_path {in_path} out_path {out_path}")
@@ -499,10 +594,13 @@ class Env:
         in_path, out_path, pf = msg.res[0], msg.res[1], msg.res[2]
         # if pf != -1:
         pf = pf_id[pf]
-        self.in_state[in_path] = 0
-        self.out_state[out_path] = 0
+        self.in_state[in_path] -= 1
+        self.in_state_t[in_path] = 0
+        self.out_state[out_path] -= 1
+        self.out_state_t[out_path] = 0
         # if pf != -1:
-        self.pf_state[pf] = 0
+        self.pf_state[pf] -= 1
+        self.pf_state_t[pf] = 0
         # print(f"UnLocked nbr in_path {in_path} out_path {out_path}")
         print(f"UnLocked in_path {in_path} out_path {out_path} pf {pf}")
 
@@ -515,9 +613,11 @@ class Env:
         # if pf != -1:
         #     pf = pf_id[pf]
         if in_path != -1:
-            self.in_state[in_path] = 0
+            self.in_state[in_path] -= 1
+            self.in_state_t[in_path] = 0
         if out_path != -1:
-            self.out_state[out_path] = 0
+            self.out_state[out_path] -= 1
+            self.out_state_t[out_path] = 0
         # if pf != -1:
         # self.pf_state[pf] = 0
         print(f"UnLocked nbr in_path {in_path} out_path {out_path}")
@@ -560,10 +660,13 @@ class Env:
 
     def calculate_reward(self, sched_train):
         if sched_train[-1] == 1:
+            sched_train[0].reward += -100
             return -100
         elif sched_train[3] in sched_train[0].data["pref_pf"]:
+            sched_train[0].reward += 100
             return 100
         else:
+            sched_train[0].reward += 50
             return 50
 
     def lock_incompat_paths(self, train, in_path_id, out_path_id, stop):
@@ -579,6 +682,16 @@ class Env:
             n1 = PIG.nodes[out_path]["idx"]
             res = (-1, n1, -1, stop)
             self.lock_nbrs(res)
+
+    def update_returns(self):
+        ep_return = 0
+        for i in range(len(self.schedule)-1, -1, -1):
+            train_id = self.schedule[i][0].data["name"]
+            in_path_id = self.schedule[i][1]
+            out_path_id = self.schedule[i][2]
+            net_reward = ep_return + self.schedule[i][0].reward
+            self.ep_returns.append(
+                (train_id, in_path_id, out_path_id, net_reward))
 
     def step(self):
         '''
@@ -596,10 +709,13 @@ class Env:
             train = self.tq.pop()
             action = self.get_action(train)
             if action[-1]:
+                sched_train = (action[0], 0, 0, 0, 0, 0, 1)
+                self.calculate_reward(sched_train)
                 action[0].delay()
+                self.net_delay += 1
                 self.tq.push(action[0])
                 print(f"Train {action[0].data['name']} is delayed by 1 min")
-                sched_train = (-1, 0, 0, 0, 0, 0, 1)
+
             else:
                 sched_train = (action[0], action[1], action[2], action[3], action[0].data["arr_t"],
                                action[0].get_dep_time(), 0)
@@ -617,11 +733,23 @@ class Env:
                 # print(f"Train {sched_train[0].data['name']} in_path: {arr_paths_id[sched_train[1]]}, out_path: {dep_paths_id[sched_train[2]]},
                 # pf: {sched_train[3]} arr_t: {sched_train[4]} dep_t: {sched_train[5]}")
                 # print(self.schedule[-1])
-                reward = self.calculate_reward(sched_train)
-                self.agent.get_reward(reward)
-                return reward
+                self.calculate_reward(sched_train)
+                # self.agent.get_reward(reward)
+                # return reward
         else:
             return 0
+
+
+def run_episode(agent, env, init_conds, n_steps):
+    env.reset(init_conds)
+    env.init_agent(agent)
+    for i in range(n_steps):
+        print(f"Env Step no. {i} Clock {env.clock}")
+        env.step()
+    env.update_returns()
+    agent.update_q_table(env.ep_returns)
+    for i in range(len(env.schedule)):
+        print(f"{env.schedule[i][0].data['name']} {env.schedule[i][1:]}")
 
 
 if __name__ == "__main__":
@@ -636,21 +764,27 @@ if __name__ == "__main__":
     tlist = read_trains("train_data.txt")
     init_conds = {
         "tlist": tlist,
+        "mlist": [],
         "start_time": 0,
         "in_state": [],
         "out_state": [],
         "pf_state": []
     }
-    agent = Agent()
-    env = Env(init_conds, agent)
+    # agent = Agent_MCTS()
+    env = Env(init_conds)
+    agent = Agent_MCTS(tlist, env.in_state, env.out_state)
+    epochs = 1
+    for _ in range(epochs):
+        run_episode(agent, env, init_conds, 50)
+    curr_date = f"{datetime.now().strftime(time_format+'-'+date_format)}"
+    save_agent(
+        agent, f"MCTS-{curr_date}")
+    # file = open(f"MCTS-{curr_date}.pickle", 'rb')
+    agent = load_agent(f"MCTS-{curr_date}")
+    # print(datetime.now())
     # print(list(PIG.nodes))
     # nx.draw_shell(PIG, with_labels=True, labels=PIG_labels)
     # plt.show()
-    for i in range(50):
-        print(f"Env Step no. {i} Clock {env.clock}")
-        env.step()
-    for i in range(len(env.schedule)):
-        print(f"{env.schedule[i][0].data['name']} {env.schedule[i][1:]}")
     # print(arr_paths)
     # print(dep_paths)
     # print(arr_paths[0][-1])
