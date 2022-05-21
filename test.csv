@@ -1,0 +1,341 @@
+,Train Name,Arrives,Departs,Stop time,M,T,W,T.1,F,S,S.1,Train_No,Pf_No,Arr_D,Dep_D
+0,Ghy Rajdhani Express (22423),05:00,05:08,8 min,N,N,N,N,Y,N,N,22423,4,D3,D1
+1,Ghy Rajdhani (22424),18:34,18:39,5 min,N,N,N,Y,N,N,N,22424,--,D1,D3
+2,Mahananda Express (14084),15:12,15:20,8 min,Y,Y,Y,Y,Y,Y,Y,14084,--,D1,D3
+3,Gkp Ltt Special (05041),17:55,18:05,10 min,N,N,N,N,N,Y,N,5041,--,D2,D1
+4,Anvt Sdah Superfast Special (03190),18:50,19:05,15 min,N,N,N,N,N,Y,N,3190,--,D1,D2
+5,Pnbe Hwh Special (03066),18:50,19:05,15 min,N,N,N,Y,N,N,N,3066,--,D1,D2
+6,Pnbe Anvt Superfast Special (03209),08:55,09:05,10 min,Y,N,Y,N,N,Y,N,3209,--,D2,D1
+7,Kota Pnbe Express (93238),04:20,04:30,10 min,N,N,N,Y,Y,N,Y,93238,--,D1,D2
+8,Ndls Dbg Splq (04072),05:30,05:35,5 min,N,N,N,N,N,Y,N,4072,--,D1,D2
+9,Dbg Ndls Special (04071),02:40,02:45,5 min,N,N,N,N,N,N,Y,4071,--,D2,D1
+10,Ru Gkp Special (07490),08:10,08:20,10 min,N,N,N,N,N,N,Y,7490,--,D1,D2
+11,Ndls Hwh Special (04008),01:45,01:50,5 min,Y,Y,Y,Y,Y,Y,Y,4008,--,D1,D3
+12,Nzm Snsi Special (04016),01:45,01:50,5 min,N,N,N,N,Y,N,N,4016,--,D1,D3
+13,Kota Pnbe Express (93240),04:20,04:30,10 min,Y,Y,Y,N,N,Y,N,93240,6,D1,D2
+14,Ltt Ald Premium (04128),18:15,18:25,10 min,N,N,N,N,N,Y,N,4128,--,D1,D3
+15,Ald Anvt Special (04117),02:40,02:45,5 min,N,N,N,N,N,Y,N,4117,--,D3,D1
+16,Kyq Ndls Special (05620),07:35,07:45,10 min,N,N,N,Y,N,N,N,5620,--,D3,D1
+17,Bbs Cstm Special (01020),21:45,21:55,10 min,N,Y,N,N,N,N,N,1020,--,D2,D1
+18,Aii Bju Special (05286),15:35,15:45,10 min,N,N,N,N,N,N,Y,5286,--,D1,D2
+19,Aii Cpr Special (05104),08:25,08:35,10 min,N,N,N,N,N,Y,N,5104,--,D1,D2
+20,Hwh Ajmer Special (03001),10:10,10:20,10 min,N,N,N,Y,N,N,N,3001,--,D3,D1
+21,Aii Hwh Special (03002),06:10,06:20,10 min,N,N,N,N,N,Y,N,3002,--,D1,D3
+22,Koaa Agc Express (12319),03:50,04:00,10 min,N,N,Y,N,N,N,N,12319,--,D3,D1
+23,Agc Koaa Express (12320),01:05,01:15,10 min,N,N,N,Y,N,N,N,12320,--,D1,D3
+24,Ljn Anvt Special (05029),21:40,21:45,5 min,N,N,N,Y,N,N,N,5029,--,D2,D1
+25,Anvt Pnbe Special (02394),00:55,01:00,5 min,N,Y,N,N,Y,N,N,2394,--,D1,D3
+26,Ju Hwh Superfast Special (04823),07:15,07:25,10 min,N,N,N,N,Y,N,N,4823,--,D1,D3
+27,Gkp Ltt Special (05031),17:55,18:05,10 min,N,N,N,N,N,Y,N,5031,--,D2,D1
+28,Uhp Ald Special (04114),18:00,18:05,5 min,N,N,N,N,N,N,Y,4114,--,D1,D3
+29,Koaa Anvtspecia (03125),07:15,07:25,10 min,N,N,N,N,N,Y,N,3125,--,D3,D1
+30,Anvt Koaa Superfast Special (03126),01:45,01:55,10 min,N,N,N,N,N,N,Y,3126,--,D1,D3
+31,Hwh Ju Special (04824),12:45,12:55,10 min,Y,N,N,N,N,N,N,4824,--,D3,D1
+32,Pnbe Anvt Superfast Special (02393),05:30,05:40,10 min,Y,N,N,Y,N,N,N,2393,--,D3,D1
+33,Adi Ald Special (09427),13:30,13:40,10 min,Y,N,N,N,N,N,N,9427,--,D1,D3
+34,Ald Adi Special (09428),20:45,20:55,10 min,N,Y,N,N,N,N,N,9428,--,D3,D1
+35,Pnbe Bdts Special (09012),15:20,15:35,15 min,N,Y,N,N,N,N,N,9012,--,D3,D1
+36,Bdts Pnbe Special (09011),05:15,05:25,10 min,N,N,N,N,N,N,Y,9011,--,D1,D3
+37,Pnbe Ndls Special (04003),19:40,19:50,10 min,N,N,Y,N,Y,N,Y,4003,--,D3,D1
+38,Pnbe Ac Special (04004),07:20,07:30,10 min,N,Y,N,Y,N,Y,N,4004,--,D1,D3
+39,Jp Hwh Special (09703),07:15,07:25,10 min,Y,N,N,N,N,N,N,9703,--,D1,D3
+40,Ziyarat Express (12395),03:35,03:43,8 min,N,N,Y,N,N,N,N,12395,--,D3,D1
+41,Rjpb Rajdhani (12309),02:30,02:35,5 min,Y,Y,Y,Y,Y,Y,Y,12309,1,D3,D1
+42,Sdah Rajdhaniex (12313),05:10,05:18,8 min,Y,Y,Y,Y,Y,Y,Y,12313,1,D3,D1
+43,Shram Shkti Express (12452),06:30,06:30,15 min,Y,Y,Y,Y,Y,Y,Y,12452,--,D1,D3
+44,Lal Quila Express (13111),18:55,19:05,10 min,Y,Y,Y,Y,Y,Y,Y,13111,--,D3,D1
+45,W B Sampark Kranti (12329),03:50,04:00,10 min,N,Y,N,N,N,N,N,12329,4,D3,D1
+46,Anvt Rdp Link (22488),13:45,13:55,10 min,Y,Y,Y,Y,Y,Y,Y,22488,--,D1,D3
+47,Agc Koaa Express (13168),12:33,12:40,7 min,N,N,N,N,N,Y,N,13168,--,D1,D2
+48,Shram Shkti Express (12451),23:30,23:45,15 min,Y,Y,Y,Y,Y,Y,Y,12451,1,D3,D1
+49,Ald Dli Superfast Special (04001),19:40,19:50,10 min,N,Y,N,N,Y,N,N,4001,--,D3,D1
+50,Cnb Cstm Special (04153),22:55,23:10,15 min,N,N,Y,N,N,N,N,4153,--,D3,D1
+51,Anvt Gkp Special (05036),19:20,19:30,10 min,N,N,Y,N,N,N,N,5036,--,D1,D2
+52,Gkp Anvt Special (05035),21:40,21:45,5 min,N,N,N,Y,N,N,N,5035,--,D2,D1
+53,Lal Quila Express (13112),06:40,06:50,10 min,Y,Y,Y,Y,Y,Y,Y,13112,4,D1,D3
+54,Jhrkhnd S Krant (12825),13:40,13:55,15 min,Y,N,N,Y,N,N,N,12825,1,D3,D1
+55,Pnbe Adi Special (09412),20:00,20:10,10 min,N,Y,N,N,N,N,N,9412,--,D3,D1
+56,Asn Anvt Special (03517),23:35,23:40,5 min,N,N,N,N,Y,N,N,3517,--,D3,D1
+57,Anvt Asn Special (03518),17:15,17:20,5 min,N,N,N,N,N,Y,N,3518,--,D1,D3
+58,Ljn Garib Rath (12594),08:15,08:20,5 min,N,N,N,N,N,N,Y,12594,3,D1,D2
+59,Ndls Premium Special (02259),06:20,06:25,5 min,N,N,N,N,Y,N,N,2259,--,D3,D1
+60,Sdah Premium (02260),00:27,00:32,5 min,N,N,N,N,N,Y,N,2260,--,D1,D3
+61,Ltt Ald Special (04116),10:50,11:00,10 min,N,N,N,Y,N,N,N,4116,--,D1,D3
+62,Ald Ltt Special (04115),15:05,15:15,10 min,N,N,Y,N,N,N,N,4115,--,D3,D1
+63,Cnb Garib Rath (12210),04:35,04:35,15 min,Y,N,N,N,N,N,N,12210,--,D2,D1
+64,Prayag Raj Express (12417),00:05,00:15,10 min,Y,Y,Y,Y,Y,Y,Y,12417,1,D3,D1
+65,Prayag Raj Express (12418),03:30,03:35,5 min,Y,Y,Y,Y,Y,Y,Y,12418,5,D1,D3
+66,Sangam Express (14163),21:20,21:25,5 min,Y,Y,Y,Y,Y,Y,Y,14163,1,D3,D1
+67,Sangam Express (14164),04:10,04:20,10 min,Y,Y,Y,Y,Y,Y,Y,14164,7,D1,D3
+68,Asr Cnb Express (14154),05:05,05:05,15 min,N,Y,N,N,N,N,N,14154,--,D1,D3
+69,Chaurichauraexp (15004),11:45,11:55,10 min,Y,Y,Y,Y,Y,Y,Y,15004,1,D3,D1
+70,Kgm Garib Rath (12209),06:00,06:15,15 min,N,Y,N,N,N,N,N,12209,5,D1,D2
+71,Shiv Ganga Express (12559),01:30,01:38,8 min,Y,Y,Y,Y,Y,Y,Y,12559,1,D3,D1
+72,Shiv Ganga Express (12560),01:00,01:05,5 min,Y,Y,Y,Y,Y,Y,Y,12560,6,D1,D3
+73,Link Express (14114),04:10,04:20,10 min,Y,Y,Y,Y,Y,Y,Y,14114,--,D1,D3
+74,Jat Cnb Express (12470),14:50,14:50,15 min,N,Y,N,Y,N,N,N,12470,--,D2,D1
+75,Kolkata Rajdhani (12302),21:38,21:43,5 min,Y,Y,Y,Y,N,Y,Y,12302,5,D1,D3
+76,Sealdah Rjdhani (12314),21:20,21:25,5 min,Y,Y,Y,Y,Y,Y,Y,12314,5,D1,D3
+77,North East Express (12506),12:50,13:00,10 min,Y,Y,Y,Y,Y,Y,Y,12506,7,D1,D3
+78,Farakka Express (13484),05:30,05:45,15 min,N,Y,N,Y,Y,N,Y,13484,7,D1,D2
+79,Ndls Rnc G Rath (12878),21:00,21:05,5 min,N,Y,N,Y,N,N,Y,12878,4,D1,D3
+80,Nandan Kanan Express (12816),12:20,12:30,10 min,Y,N,Y,Y,N,Y,N,12816,--,D1,D3
+81,Bubneswr Rajdhani (22824),21:48,21:53,5 min,N,Y,Y,Y,N,Y,N,22824,4,D1,D3
+82,Kolkata Rajdhani (12306),21:38,21:43,5 min,N,N,N,N,Y,N,N,12306,6,D1,D3
+83,Ndls Bbs Superfast Express (22806),13:15,13:30,15 min,Y,N,N,N,N,N,N,22806,--,D1,D3
+84,Jharkhand Express (12874),01:45,01:50,5 min,N,Y,Y,N,Y,N,N,12874,6,D1,D3
+85,Cnb Jat Express (12469),17:00,17:15,15 min,N,N,Y,N,Y,N,N,12469,--,D1,D2
+86,Anvt Cnb Express (14152),07:30,07:30,15 min,N,N,N,N,N,N,Y,14152,--,D1,D2
+87,Asr Kir Express (15708),22:45,23:00,15 min,Y,Y,Y,Y,Y,Y,Y,15708,--,D1,D2
+88,Orissa S Kranti (12820),13:15,13:30,15 min,N,Y,N,N,Y,N,N,12820,6,D1,D3
+89,Anvt Koaa Express (13132),03:40,03:50,10 min,Y,Y,Y,Y,Y,Y,Y,13132,--,D1,D3
+90,Orissa S Kranti (12819),13:40,13:55,15 min,N,N,Y,N,N,N,Y,12819,--,D3,D1
+91,Pbh Bpl Express (12184),00:15,00:20,5 min,Y,N,Y,N,N,Y,N,12184,4,D2,D1
+92,Vaishali Express (12553),23:55,00:05,10 min,Y,Y,Y,Y,Y,Y,Y,12553,9,D2,D1
+93,Bihar S Kranti (12565),22:48,22:58,10 min,Y,Y,Y,Y,Y,Y,Y,12565,7,D2,D1
+94,Nandan Kanan Express (12815),10:10,10:20,10 min,Y,N,Y,Y,N,Y,N,12815,2,D3,D1
+95,Jharkhand S J E (12873),07:20,07:25,5 min,Y,Y,N,Y,N,N,N,12873,2,D3,D1
+96,Seemanchal Express (12487),14:30,14:40,10 min,Y,Y,Y,Y,Y,Y,Y,12487,1,D3,D1
+97,Anvt Bgp G Rath (22406),22:12,22:17,5 min,Y,N,Y,N,Y,N,N,22406,--,D1,D3
+98,Ljn R Garibrath (12535),16:05,16:10,5 min,Y,N,N,Y,N,N,N,12535,6,D2,D1
+99,Garbha Express (12938),14:00,14:15,15 min,Y,N,N,N,N,N,N,12938,2,D3,D1
+100,Hwh Ndls Express (12323),10:10,10:20,10 min,N,Y,N,N,Y,N,N,12323,2,D3,D1
+101,Ndls Bgp Express (12350),06:10,06:20,10 min,N,Y,N,N,N,N,N,12350,--,D1,D3
+102,Anvt Hlz S F Express (12444),01:15,01:20,5 min,N,Y,N,N,N,N,N,12444,--,D1,D3
+103,Porvotr S Kranti (12501),06:45,06:50,5 min,N,Y,Y,N,N,Y,N,12501,2,D3,D1
+104,North East Express (12505),12:45,12:55,10 min,Y,Y,Y,Y,Y,Y,Y,12505,4,D3,D1
+105,Garbha Express (12937),19:55,20:05,10 min,N,N,N,N,N,Y,N,12937,7,D1,D3
+106,Chitrakut Express (15009),19:05,19:15,10 min,Y,Y,Y,Y,Y,Y,Y,15009,2,D2,D1
+107,Ljn Garibrath (12536),03:30,03:40,10 min,N,Y,N,N,Y,N,N,12536,6,D1,D2
+108,Kolkata Rajdhni (12301),04:45,04:53,8 min,Y,Y,Y,Y,Y,Y,N,12301,2,D3,D1
+109,Rou Muri Jat Express (18109),12:25,12:35,10 min,Y,Y,Y,Y,Y,Y,Y,18109,--,D3,D1
+110,Rnc Ndls Raj Express (12439),05:45,05:50,5 min,N,N,Y,N,N,Y,N,12439,2,D3,D1
+111,Azimabad Express (12948),08:00,08:15,15 min,N,N,Y,N,Y,N,N,12948,4,D3,D1
+112,U Abhatoofan Express (13007),08:25,08:40,15 min,Y,Y,Y,Y,Y,Y,Y,13007,2,D3,D1
+113,Avadh Express (19038),22:30,22:37,7 min,Y,N,Y,N,Y,Y,N,19038,--,D2,D1
+114,Bbs Rajdhani Express (22823),05:20,05:28,8 min,Y,Y,N,Y,Y,N,N,22823,4,D3,D1
+115,Rnc Ndls Raj Express (12453),05:45,05:50,5 min,N,N,N,Y,N,N,Y,12453,2,D3,D1
+116,Bpl Pbh Superfast Express (12183),04:00,04:05,5 min,N,Y,N,N,Y,N,Y,12183,2,D1,D2
+117,Ndls Rnc Raj Express (12440),21:00,21:05,5 min,Y,N,N,N,Y,N,N,12440,4,D1,D3
+118,Pratap Express (12496),14:00,14:15,15 min,N,N,N,N,Y,N,N,12496,1,D3,D1
+119,Ssm Garib Rath (22410),01:15,01:20,5 min,N,N,N,N,N,Y,N,22410,--,D1,D3
+120,Gkp Adi Express (19410),12:05,12:10,5 min,N,N,N,N,N,Y,Y,19410,--,D2,D1
+121,Ljn Bpl G R (12593),00:30,00:40,10 min,N,N,N,N,N,Y,N,12593,4,D2,D1
+122,Bsb Okha Express (19570),03:50,04:00,10 min,N,N,N,N,N,Y,N,19570,--,D3,D1
+123,Anvt Garib Rath (22409),03:50,04:00,10 min,N,N,N,N,N,N,Y,22409,2,D3,D1
+124,Ljn Jp Express (19716),13:50,13:55,5 min,Y,N,Y,N,N,Y,N,19716,--,D2,D1
+125,Src Anvt Special (08033),03:50,04:00,10 min,Y,N,N,N,N,N,N,8033,--,D3,D1
+126,Kavi Guru Express (19709),11:50,12:20,30 min,Y,N,N,N,N,N,N,19709,--,D1,D2
+127,Ypr Gkp Express (15024),19:05,19:15,10 min,N,N,N,Y,N,N,N,15024,--,D1,D2
+128,Kyq Jp Kaviguru (19710),04:15,04:25,10 min,N,N,N,Y,N,N,N,19710,--,D2,D1
+129,Bkn Koaa Superfast Express (12495),19:55,20:05,10 min,N,N,N,Y,N,N,N,12495,--,D1,D3
+130,Cnb Anvt Express (14151),06:55,07:10,15 min,N,N,N,N,N,N,Y,14151,--,D2,D1
+131,Hwh Ju Express (12307),15:05,15:20,15 min,Y,Y,Y,Y,Y,Y,Y,12307,--,D3,D1
+132,Mahabodhi Express (12397),22:15,22:20,5 min,Y,Y,Y,Y,Y,Y,Y,12397,1,D3,D1
+133,Magadh Express (12401),03:20,03:25,5 min,Y,Y,Y,Y,Y,Y,Y,12401,1,D3,D1
+134,Dbrt Rajdhani E (12423),05:00,05:08,8 min,Y,Y,Y,Y,Y,Y,Y,12423,2,D3,D1
+135,Brahmputra Mail (14055),22:35,22:45,10 min,Y,Y,Y,Y,Y,Y,Y,14055,2,D3,D1
+136,Tata Jat Express (18101),12:25,12:35,10 min,Y,Y,Y,Y,Y,Y,Y,18101,7,D3,D1
+137,Pratham S S Express (11105),03:45,03:55,10 min,N,N,N,N,N,N,Y,11105,--,D3,D1
+138,Kolkata Rajdhani (12305),04:45,04:53,8 min,N,N,N,N,N,N,Y,12305,--,D3,D1
+139,Poorva Express (12381),00:05,00:13,8 min,N,N,Y,Y,N,N,Y,12381,--,D3,D1
+140,Jharkhand Sj Express (12817),07:20,07:25,5 min,N,N,Y,N,Y,N,Y,12817,2,D3,D1
+141,Neelachal Express (12875),15:20,15:30,10 min,N,Y,N,N,Y,N,Y,12875,4,D2,D1
+142,Bbs Rajdhani Express (22811),05:20,05:28,8 min,N,N,Y,N,N,Y,Y,22811,--,D3,D1
+143,Mau Anvt Express (15025),21:35,21:45,10 min,N,Y,N,N,N,N,Y,15025,--,D2,D1
+144,Sabarmati Express (19166),01:02,01:10,8 min,Y,N,Y,N,N,Y,N,19166,6,D2,D1
+145,Rjpb Indb Express (19322),00:30,00:40,10 min,Y,N,N,N,N,N,N,19322,4,D2,D1
+146,Jyg Anvt G Rath (12569),02:55,03:00,5 min,Y,N,N,N,Y,N,N,12569,2,D3,D1
+147,Lichchavi Express (14006),23:30,23:40,10 min,Y,Y,Y,Y,Y,Y,Y,14006,--,D1,D3
+148,Betwa Express (18203),13:05,13:05,15 min,N,Y,N,N,N,N,Y,18203,--,D1,D2
+149,Avadh Express (19040),22:30,22:37,7 min,N,Y,N,Y,N,N,Y,19040,--,D2,D1
+150,Jyg Garib Rath (12570),22:12,22:17,5 min,N,Y,N,N,N,Y,N,12570,2,D1,D3
+151,Purshottam Express (12802),04:45,04:50,5 min,Y,Y,Y,Y,Y,Y,Y,12802,5,D1,D3
+152,Neelachal Express (12876),12:30,12:40,10 min,N,Y,N,N,Y,N,Y,12876,5,D1,D2
+153,Brahmputra Mail (14056),05:55,06:00,5 min,Y,Y,Y,Y,Y,Y,Y,14056,--,D1,D3
+154,Jhs Ljn Intercity Express (11109),10:20,10:35,15 min,Y,Y,Y,Y,Y,Y,Y,11109,--,D1,D2
+155,Ljn Jhs Intercity Express (11110),18:15,18:30,15 min,Y,Y,Y,Y,Y,Y,Y,11110,4,D2,D1
+156,Ljn Swran Shtbd (12003),16:50,16:55,5 min,Y,Y,Y,Y,Y,Y,Y,12003,3,D2,D1
+157,Ljn Swran Shtbd (12004),11:20,11:25,5 min,Y,Y,Y,Y,Y,Y,Y,12004,3,D1,D2
+158,Lucknow Superfast Express (12107),13:30,13:50,20 min,Y,N,Y,N,N,Y,N,12107,7,D1,D2
+159,Gomti Express (12419),07:35,07:40,5 min,Y,Y,Y,Y,Y,Y,Y,12419,7,D2,D1
+160,Gomti Express (12420),19:45,19:55,10 min,Y,Y,Y,Y,Y,Y,Y,12420,8,D1,D2
+161,Rewa Anvt Express (12427),23:30,23:35,5 min,Y,Y,Y,Y,Y,Y,Y,12427,2,D3,D1
+162,Rmr Bdts Express (19062),17:55,18:05,10 min,N,N,N,N,N,Y,N,19062,--,D2,D1
+163,Ndls Cnb Shatabdi (12034),20:50,20:50,15 min,Y,Y,Y,Y,Y,Y,N,12034,--,D1,D2
+164,Ltt Gkp Superfast Express (12542),09:45,09:55,10 min,Y,Y,Y,Y,Y,Y,Y,12542,6,D1,D2
+165,Pnbe Kota Express (13239),01:20,01:30,10 min,Y,N,Y,Y,Y,N,N,13239,7,D2,D1
+166,Kyq Gimb Express (15668),19:20,19:30,10 min,N,N,Y,N,N,N,N,15668,--,D2,D1
+167,Avadh Express (19039),04:35,04:45,10 min,Y,N,N,Y,N,Y,N,19039,--,D1,D2
+168,Cnb Asr Express (14153),17:00,17:15,15 min,Y,N,N,N,N,N,N,14153,--,D2,D1
+169,Jp Ljn Express (19715),08:50,08:55,5 min,N,Y,N,N,Y,N,Y,19715,--,D1,D2
+170,Parasnath Express (12942),08:00,08:15,15 min,N,N,N,Y,N,N,N,12942,2,D3,D1
+171,Gkp Okha Express (15045),12:05,12:20,15 min,N,N,N,Y,N,N,N,15045,--,D2,D1
+172,Rnc Garib Rath (12877),05:45,05:50,5 min,Y,Y,N,N,Y,N,N,12877,2,D3,D1
+173,Gorakhpur Express (12590),08:15,08:20,5 min,N,N,N,N,Y,N,N,12590,6,D1,D2
+174,Sabarmati Express (19168),01:02,01:10,8 min,N,Y,N,Y,Y,N,Y,19168,7,D2,D1
+175,Indore Express (19314),00:30,00:40,10 min,N,N,N,N,Y,N,N,19314,--,D2,D1
+176,Jalianwalab Express (12379),03:50,04:00,10 min,N,N,N,N,Y,N,N,12379,--,D2,D1
+177,Gkp Ltt Superfast Express (12541),05:25,05:35,10 min,Y,Y,Y,Y,Y,Y,Y,12541,5,D2,D1
+178,Varuna Express (24228),15:45,16:00,15 min,N,Y,Y,N,Y,Y,Y,24228,4,D1,D2
+179,Pratham S Sngrm (11106),01:20,01:30,10 min,N,N,N,N,Y,N,N,11106,--,D1,D3
+180,Kaifiyat Express (12225),00:45,00:50,5 min,Y,Y,Y,Y,Y,Y,Y,12225,9,D2,D1
+181,Pushpak Express (12533),21:20,21:32,12 min,Y,Y,Y,Y,Y,Y,Y,12533,3,D2,D1
+182,Gorakdam Express (12555),23:23,23:28,5 min,Y,Y,Y,Y,Y,Y,Y,12555,7,D2,D1
+183,Gorakdam Express (12556),03:10,03:15,5 min,Y,Y,Y,Y,Y,Y,Y,12556,8,D1,D2
+184,Unchahar Express (14218),05:05,05:30,25 min,Y,Y,Y,Y,Y,Y,Y,14218,4,D1,D2
+185,Utsarg Express (18192),16:40,17:00,20 min,Y,Y,Y,Y,Y,Y,Y,18192,--,D1,D2
+186,Utsarg Express (18191),09:20,09:35,15 min,Y,Y,Y,Y,Y,Y,Y,18191,--,D2,D1
+187,Rnc Garib Nawaz (18632),07:30,07:45,15 min,N,N,N,N,N,Y,N,18632,--,D1,D3
+188,Kamakhya Express (15667),19:15,19:30,15 min,N,N,N,N,N,Y,N,15667,--,D1,D2
+189,Cnb Ndls Shatabdi (12033),05:45,06:00,15 min,Y,Y,Y,Y,Y,Y,N,12033,1,D1,D3
+190,Ltt Sln Superfast Express (12143),15:40,15:45,5 min,N,N,N,N,N,N,Y,12143,--,D1,D2
+191,Ananya Express (12316),19:55,20:05,10 min,Y,N,N,N,N,N,N,12316,6,D1,D2
+192,Udyog Nagri Express (12173),13:30,13:35,5 min,N,Y,N,N,N,N,Y,12173,--,D1,D2
+193,Sdah Ajmer Express (12987),14:30,14:40,10 min,Y,Y,Y,Y,Y,Y,Y,12987,2,D3,D1
+194,Mfp St Express (19054),12:05,12:20,15 min,N,N,N,N,N,N,Y,19054,--,D2,D1
+195,Poorva Express (12382),23:10,23:15,5 min,Y,Y,N,N,Y,N,N,12382,4,D1,D3
+196,Asr Kir Express (15708),22:50,23:00,10 min,Y,Y,Y,Y,Y,Y,Y,15708,--,D1,D2
+197,Sln Ltt Superfast Special (12144),04:15,04:25,10 min,Y,N,N,N,N,N,N,12144,--,D1,D2
+198,Poorva Express (12304),23:10,23:15,5 min,N,N,Y,Y,N,Y,Y,12304,4,D1,D3
+199,Bvc Asansol Express (12941),19:55,20:05,10 min,N,Y,N,N,N,N,N,12941,2,D1,D3
+200,Ald Jp Express (12403),02:05,02:15,10 min,Y,Y,Y,Y,Y,Y,Y,12403,2,D3,D1
+201,Dbrt Rajdhani (12424),18:34,18:39,5 min,Y,Y,Y,Y,Y,Y,Y,12424,1,D1,D3
+202,Indb Patna Express (19313),04:00,04:05,5 min,N,N,Y,N,N,N,N,19313,--,D1,D2
+203,Marudhar Express (14866),01:20,01:25,5 min,N,N,Y,N,N,N,N,14866,--,D1,D2
+204,Gkp Sc Express (12589),13:17,13:22,5 min,N,N,Y,N,N,N,N,12589,5,D2,D1
+205,Koaa Anvt Express (13131),23:05,23:15,10 min,Y,Y,Y,Y,Y,Y,Y,13131,--,D3,D1
+206,Sabarmati Express (19167),23:10,23:20,10 min,Y,Y,N,Y,N,Y,N,19167,6,D1,D2
+207,Okha Bsb Express (19569),19:55,20:05,10 min,N,N,N,Y,N,N,N,19569,6,D1,D3
+208,Kushinagar Express (11016),02:15,02:25,10 min,Y,Y,Y,Y,Y,Y,Y,11016,4,D2,D1
+209,Ljn Ltt Express (12108),00:15,00:20,5 min,N,Y,N,Y,N,N,Y,12108,4,D2,D1
+210,Udhyogkarmi Express (12944),07:45,08:00,15 min,N,N,N,N,Y,N,N,12944,--,D2,D1
+211,Sabarmati Express (19165),23:10,23:20,10 min,N,N,Y,N,Y,N,Y,19165,--,D1,D2
+212,St Mfp Express (19053),11:50,12:05,15 min,N,N,N,N,Y,N,N,19053,--,D1,D2
+213,Sdah Superfast Premium (02266),23:00,23:05,5 min,N,N,N,N,N,N,Y,2266,--,D1,D3
+214,Jat Muri Rou Express (18110),12:40,12:50,10 min,Y,Y,Y,Y,Y,Y,Y,18110,--,D1,D3
+215,Swatantrta S Express (12562),02:45,02:50,5 min,Y,Y,Y,Y,Y,Y,Y,12562,4,D1,D3
+216,Bihar S Kranti (12566),20:15,20:20,5 min,Y,Y,Y,Y,Y,Y,Y,12566,7,D1,D2
+217,Jhrkhnd S Kranti (12826),13:15,13:30,15 min,N,N,Y,N,N,Y,N,12826,6,D1,D2
+218,Kalindi Express (14723),16:50,17:05,15 min,Y,Y,Y,Y,Y,Y,Y,14723,9,D2,D1
+219,Kalindi Express (14724),11:10,11:10,15 min,Y,Y,Y,Y,Y,Y,Y,14724,--,D1,D2
+220,Marudhar Express (14853),01:55,02:00,5 min,Y,N,Y,N,N,Y,N,14853,--,D2,D1
+221,Marudhar Express (14854),01:20,01:25,5 min,Y,N,N,Y,N,Y,N,14854,--,D1,D2
+222,Indb Rjpb Express (19321),04:00,04:05,5 min,N,N,N,N,N,Y,N,19321,--,D1,D2
+223,Mahananda Express (15484),15:12,15:20,8 min,Y,Y,Y,Y,Y,Y,Y,15484,--,D1,D3
+224,Ljn Pune Express (12104),07:50,08:00,10 min,N,N,N,N,N,N,Y,12104,4,D2,D1
+225,Jp Ald Express (12404),02:00,02:10,10 min,Y,Y,Y,Y,Y,Y,Y,12404,5,D1,D3
+226,Porvotr S Kranti (12502),06:10,06:20,10 min,N,N,Y,Y,N,N,Y,12502,--,D1,D3
+227,Marudhar Express (14863),01:55,02:00,5 min,N,Y,N,N,Y,N,Y,14863,--,D2,D1
+228,Marudhar Express (14864),01:20,01:25,5 min,N,Y,N,N,Y,N,Y,14864,8,D1,D2
+229,Jalianwala B Express (12380),01:15,01:20,5 min,N,N,N,N,N,N,Y,12380,--,D1,D2
+230,Bubneswr Rajdhani (22812),21:48,21:53,5 min,Y,N,N,N,Y,N,Y,22812,--,D1,D3
+231,Betwa Express (18204),18:05,18:20,15 min,Y,N,Y,N,N,N,N,18204,2,D3,D1
+232,Gkp Ypr Express (15015),13:17,13:22,5 min,Y,N,N,N,N,N,N,15015,--,D2,D1
+233,Ramnagar Express (19061),08:50,08:55,5 min,N,N,N,Y,N,N,N,19061,--,D1,D2
+234,Udyog Nagri Express (12174),07:55,08:00,5 min,N,Y,N,Y,N,N,N,12174,5,D2,D1
+235,Raptisagar Express (12512),08:15,08:20,5 min,N,Y,Y,N,N,N,Y,12512,--,D1,D2
+236,Orissa S Kranti (12820),13:15,13:30,15 min,N,Y,N,N,Y,N,N,12820,6,D1,D2
+237,Lucknow Express (16093),19:05,19:15,10 min,N,Y,N,N,N,Y,N,16093,6,D1,D2
+238,W B Sampark Kranti (12330),01:15,01:20,5 min,N,N,Y,N,N,N,N,12330,5,D1,D2
+239,Ald Anvt Superfast Special (04421),13:30,13:40,10 min,N,N,N,N,N,N,Y,4421,--,D3,D1
+240,Anvt Ald Superfast Special (04422),06:10,06:20,10 min,N,N,N,N,Y,N,N,4422,--,D1,D3
+241,Ndls Ald Superfast Special (04424),06:10,06:20,10 min,N,N,N,N,N,Y,N,4424,--,D1,D3
+242,Bkn Ghy Express (25631),18:50,19:00,10 min,Y,N,Y,N,N,N,N,25631,--,D1,D3
+243,Bdts Gkp Superfast Special (02534),07:45,07:55,10 min,N,Y,N,N,Y,N,N,2534,--,D1,D2
+244,Gkp Bdts Special (02533),14:25,14:30,5 min,N,N,Y,N,N,N,Y,2533,--,D2,D1
+245,Gorakhpur Express (19409),11:50,12:20,30 min,N,N,N,Y,Y,N,N,19409,6,D1,D2
+246,Lucknow Premium (09013),16:37,16:47,10 min,N,N,N,N,N,Y,N,9013,--,D1,D2
+247,Raptisagar Express (12522),08:15,08:20,5 min,N,N,N,N,Y,N,N,12522,4,D1,D2
+248,Bkn Hwh Supfast (22308),10:55,11:10,15 min,Y,Y,Y,Y,Y,Y,Y,22308,3,D1,D3
+249,Ju Hwh Supfast (12308),10:55,11:10,15 min,Y,Y,Y,Y,Y,Y,Y,12308,3,D1,D3
+250,Unchahar Express (14217),20:05,20:30,25 min,Y,Y,Y,Y,Y,Y,Y,14217,2,D3,D1
+251,Bbs Ndls Superfast Express (22805),13:45,13:55,10 min,N,N,N,N,N,Y,N,22805,--,D3,D1
+252,Kaifiyat Express (12226),01:35,01:40,5 min,Y,Y,Y,Y,Y,Y,Y,12226,--,D1,D2
+253,Aii Sdah Express (12988),23:20,23:28,8 min,Y,Y,Y,Y,Y,Y,Y,12988,5,D1,D3
+254,Anvt Mau Express (15026),19:20,19:30,10 min,Y,N,N,N,Y,N,N,15026,--,D1,D2
+255,Gorakhpur Express (12592),08:15,08:20,5 min,Y,N,N,N,N,N,N,12592,6,D1,D2
+256,Ypr Gorakpur Express (15016),05:50,06:15,25 min,N,N,N,Y,N,N,N,15016,--,D1,D2
+257,Ljn Bdts Premiu (09014),01:35,01:50,15 min,Y,N,N,N,N,N,N,9014,--,D2,D1
+258,Vaishali Express (12554),02:20,02:25,5 min,Y,Y,Y,Y,Y,Y,Y,12554,6,D1,D2
+259,Koaa Agc Express (13167),07:50,07:55,5 min,N,N,N,Y,N,N,N,13167,--,D2,D1
+260,Bju Gwl Mail (11123),13:35,13:45,10 min,Y,Y,Y,Y,Y,Y,Y,11123,--,D2,D1
+261,Gwl Bju Mail (11124),18:20,18:35,15 min,Y,Y,Y,Y,Y,Y,Y,11124,6,D1,D2
+262,Anvt Premium (02365),07:45,07:50,5 min,N,N,Y,N,N,Y,N,2365,--,D3,D1
+263,Pnbe Premium Special (02366),01:45,01:50,5 min,N,N,N,Y,N,N,Y,2366,--,D1,D3
+264,Pushpak Express (12534),06:45,07:00,15 min,Y,Y,Y,Y,Y,Y,Y,12534,8,D1,D2
+265,Swatantra S Express (12561),06:10,06:15,5 min,Y,Y,Y,Y,Y,Y,Y,12561,1,D3,D1
+266,Lichchavi Express (14005),22:25,22:30,5 min,Y,Y,Y,Y,Y,Y,Y,14005,--,D3,D1
+267,Ljn Mas Express (16094),17:55,18:05,10 min,Y,N,N,Y,N,N,N,16094,5,D2,D1
+268,Bgp Garib Rath (22405),02:55,03:00,5 min,N,Y,N,Y,N,Y,N,22405,2,D3,D1
+269,Udyogkarmi Express (12943),19:10,19:10,15 min,N,N,Y,N,N,N,N,12943,--,D1,D2
+270,Marudhar Express (14865),01:55,02:00,5 min,N,N,N,Y,N,N,N,14865,--,D2,D1
+271,Pa Lucknow Express (12103),15:35,15:45,10 min,N,N,N,N,Y,N,N,12103,6,D1,D2
+272,Kushinagar Express (11015),00:10,00:20,10 min,Y,Y,Y,Y,Y,Y,Y,11015,7,D1,D2
+273,Gkp Ypr Express (15023),17:55,18:05,10 min,N,Y,N,N,N,N,N,15023,--,D2,D1
+274,Anvt Ald Special (04118),18:15,18:25,10 min,N,N,N,N,N,N,Y,4118,--,D1,D3
+275,Varuna Express (24227),11:35,11:35,15 min,N,Y,Y,N,Y,Y,Y,24227,--,D2,D1
+276,Rapti Sagar Express (12511),13:17,13:22,5 min,N,N,N,Y,Y,N,Y,12511,--,D2,D1
+277,Rjpb Rajdhani (12310),21:58,22:03,5 min,Y,Y,Y,Y,Y,Y,Y,12310,4,D1,D3
+278,Gkp Ypr Express (12591),13:17,13:22,5 min,N,N,N,N,N,Y,N,12591,5,D2,D1
+279,Ndls Hwh Express (12324),13:20,13:40,20 min,N,N,N,Y,N,N,Y,12324,4,D1,D3
+280,Rapti Sagar Express (12521),13:17,13:22,5 min,Y,N,N,N,N,N,N,12521,5,D2,D1
+281,Kota Pnbe Express (13240),04:20,04:30,10 min,Y,Y,Y,N,N,Y,N,13240,--,D1,D2
+282,Kota Pnbe Express (13238),04:20,04:30,10 min,N,N,N,Y,Y,N,Y,13238,--,D2,D1
+283,Purushottam Express (12801),22:00,22:10,10 min,Y,Y,Y,Y,Y,Y,Y,12801,2,D3,D1
+284,Ljn Intercity (12180),10:15,10:20,5 min,Y,Y,Y,Y,Y,Y,Y,12180,7,D1,D2
+285,Ljn Agc Intercity (12179),17:25,17:30,5 min,Y,Y,Y,Y,Y,Y,Y,12179,7,D2,D1
+286,Kir Asr Express (15707),19:50,20:00,10 min,Y,Y,Y,Y,Y,Y,Y,15707,6,D2,D1
+287,Ghy Bme Bkn Express (15632),14:00,14:15,15 min,N,N,N,Y,N,Y,N,15632,--,D3,D1
+288,Bme Ghy Express (15631),18:50,19:00,10 min,N,Y,N,N,N,N,Y,15631,--,D1,D3
+289,Guwahati Express (15635),19:15,19:30,15 min,N,N,N,N,Y,N,N,15635,--,D1,D2
+290,Poorva Express (12303),00:05,00:13,8 min,Y,Y,N,N,Y,Y,N,12303,1,D3,D1
+291,Farkka Express (13414),05:30,05:45,15 min,Y,N,Y,N,N,Y,N,13414,6,D1,D2
+292,Annanya Express (12315),06:45,06:50,5 min,N,N,N,Y,N,N,N,12315,--,D3,D1
+293,Dwarka Express (15636),19:20,19:30,10 min,Y,N,N,N,N,N,N,15636,--,D2,D1
+294,Chaurichauraexp (15003),17:00,17:30,30 min,Y,Y,Y,Y,Y,Y,Y,15003,1,D1,D3
+295,Rnc Garibnwaz E (18631),15:25,15:40,15 min,N,N,N,Y,N,N,N,18631,--,D3,D1
+296,Mtj Cpr Express (15108),05:55,06:00,5 min,Y,N,Y,N,Y,N,N,15108,9,D1,D2
+297,Anvt Rewa Express (12428),03:20,03:25,5 min,Y,Y,Y,Y,Y,Y,Y,12428,--,D1,D3
+298,Gorakhpur Express (15046),11:50,12:05,15 min,N,N,N,N,N,N,Y,15046,--,D1,D2
+299,Bgp Ndls Express (12349),06:45,06:50,5 min,Y,N,N,N,N,N,N,12349,--,D3,D1
+300,Seemanchal Express (12488),13:45,13:55,10 min,Y,Y,Y,Y,Y,Y,Y,12488,--,D1,D3
+301,Mahananda Express (15483),12:15,12:25,10 min,Y,Y,Y,Y,Y,Y,Y,15483,--,D3,D1
+302,Farakka Express (13483),21:05,21:15,10 min,N,Y,Y,N,Y,N,Y,13483,7,D2,D1
+303,Farakka Express (13413),21:05,21:15,10 min,Y,N,N,Y,N,Y,N,13413,6,D2,D1
+304,Avadh Express (19037),04:35,04:45,10 min,N,Y,Y,N,Y,N,Y,19037,--,D1,D2
+305,Pnbe Kota Express (13237),01:20,01:30,10 min,N,Y,N,N,N,Y,Y,13237,--,D2,D1
+306,Panchvalley Pa (59386),00:10,00:20,10 min,Y,Y,Y,Y,Y,Y,Y,59386,--,D1,D2
+307,Ndls Rnc Rajdhani (12454),21:00,21:05,5 min,N,N,Y,N,N,Y,N,12454,4,D1,D3
+308,Cpr Mtj Express (15107),15:05,15:15,10 min,Y,N,Y,N,Y,N,N,15107,--,D2,D1
+309,Hlz Anvt Wkly S (12443),03:50,04:00,10 min,N,N,N,Y,N,N,N,12443,--,D3,D1
+310,Ziyarat Express (12396),13:30,13:40,10 min,N,N,N,Y,N,N,N,12396,4,D1,D3
+311,Azimabad Express (12947),18:50,19:00,10 min,Y,N,Y,N,N,N,N,12947,4,D1,D3
+312,Mahabodhi Express (12398),19:05,19:10,5 min,Y,Y,Y,Y,Y,Y,Y,12398,--,D1,D3
+313,Jharkhand Express (12818),01:45,01:50,5 min,Y,N,N,Y,N,Y,N,12818,6,D1,D2
+314,Ltt Gkp Express (11079),15:35,15:45,10 min,N,N,N,Y,N,N,N,11079,--,D1,D2
+315,Gkp Ltt Express (11080),16:05,16:10,5 min,N,N,N,N,N,Y,N,11080,--,D2,D1
+316,Pune Ljn Express (11407),01:00,01:10,10 min,N,Y,N,N,N,N,N,11407,--,D1,D2
+317,Ljn Pune Express (11408),08:20,08:30,10 min,N,N,N,Y,N,N,N,11408,--,D2,D1
+318,Hwh Ndls Yuva E (12249),06:20,06:28,8 min,N,N,N,N,N,Y,N,12249,2,D3,D1
+319,Ndls Hwh Yuva (12250),00:29,00:34,5 min,N,N,N,N,N,N,Y,12250,4,D1,D3
+320,Hwh Dli Klk Mai (12311),12:35,12:45,10 min,Y,Y,Y,Y,Y,Y,Y,12311,1,D3,D1
+321,Kalka Mail (12312),14:20,14:30,10 min,Y,Y,Y,Y,Y,Y,Y,12312,5,D1,D3
+322,Magadh Express (12402),02:30,02:35,5 min,Y,Y,Y,Y,Y,Y,Y,12402,5,D1,D3
+323,Cnb Uhp Express (14155),17:00,17:15,15 min,N,Y,N,N,N,Y,N,14155,--,D2,D1
+324,Uhp Cnb Express (14156),13:55,13:55,15 min,N,N,Y,N,N,N,Y,14156,--,D1,D2
+325,Gkp Pune Express (15029),00:30,00:40,10 min,N,N,N,Y,N,N,N,15029,--,D2,D1
+326,Pune Gkp Express (15030),14:35,14:45,10 min,N,N,N,N,N,Y,N,15030,--,D1,D2
+327,Chitrakut Express (15205),19:05,19:15,10 min,Y,Y,Y,Y,Y,Y,Y,15205,--,D2,D1
+328,Chitrakut Express (15206),07:55,08:05,10 min,Y,Y,Y,Y,Y,Y,Y,15206,--,D1,D2
+329,Porvotr S Kranti (15601),06:45,06:50,5 min,Y,N,N,N,N,N,N,15601,--,D3,D1
+330,Ndls Scl Psk Express (15602),06:10,06:20,10 min,N,N,N,Y,N,N,N,15602,--,D1,D3
+331,Bdts Ljn Express (19021),18:40,18:50,10 min,N,N,N,N,N,Y,N,19021,--,D1,D2
+332,Ljn Bdts Express (19022),01:35,01:50,15 min,Y,N,N,N,N,N,N,19022,--,D2,D1
+333,Nhln Ndls Ac Express (22411),06:10,06:20,10 min,N,Y,N,N,N,N,N,22411,--,D2,D1
+334,Ndls Nhln Ac Superfast (22412),20:50,20:55,5 min,N,N,N,N,N,N,Y,22412,--,D1,D2
+335,Cnb Bdts Superfast (22443),18:05,18:20,15 min,N,N,Y,N,N,N,N,22443,--,D2,D1
+336,Bdts Kanpur Express (22444),08:35,08:35,15 min,N,N,N,N,Y,N,N,22444,--,D1,D2
+337,Rdp Anvt Link E (22487),14:30,14:40,10 min,Y,Y,Y,Y,Y,Y,Y,22487,--,D3,D1
+338,Src Anvt Superfast Express (22857),03:50,04:00,10 min,Y,N,N,N,N,N,N,22857,--,D3,D1
+339,Anvt Src Superfast Express (22858),19:55,20:05,10 min,N,Y,N,N,N,N,N,22858,--,D1,D3
